@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,38 +16,50 @@
                 <img src="img/Left.png" alt="Ícone de voltar">
             </div>
             <div class="nav-center">
-                <input type="text" placeholder="Pesquisar">
-                <button type="submit"></button>
+                <input type="text" >
+                <button type="submit">
+                    <i class="fas fa-search fa-sm" style="color: #000000;"></i>
+                </button>                
             </div>
             <div class="nav-right">
-                <button></button>
-                <button></button>
-                <button></button>
+                <img  src="img/movie.png" alt="">
+                <img src="img/bell.png" alt="">
+                <img id="perfil" src="img/Ariel Freitas.png" alt="">              
             </div>
         </nav>
     </header>
     <main>
-        <section class="video">
-            <video src=""></video> 
+        <section>
+            <img class="video" src="img/video.png" alt=""> 
+            <h1 id="titulo">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
             <div class="video-info">
-                <img src="" alt="Miniatura do vídeo">
-                <h1>DIO</h1>
-                <p>83,3 mil inscritos</p>
-                <p class="subscribe">INSCREVA-SE</p>
-                <div class="like"> 
-                    <img src="" alt="Curtir">
-                    <p>2 mil</p>
+                <div id="channel">
+                    <img src="img/Channel Avatar.png" alt="">
+                    <div>
+                        <h1>DIO</h1>
+                        <p>83,3 mil inscritos</p>
+                    </div>
                 </div>
-                <div class="unlike">
-                    <img src="" alt="Não Gostei">
-                    <p>Não Gostei</p>
+                <div id="display">
+                    <h1 class="subscribe">INSCREVA-SE</h1>
                 </div>
-                <div class="share">
-                    <p>Compartilhar</p>
-                </div>
-                <div class="download">
-                    <img src="" alt="Download">
-                    <p>Download</p>
+                <div id="action">
+                    <div class="like">
+                        <img src="img/like.png" alt="Curtir">
+                        <p>2 mil</p>
+                    </div>
+                    <div class="unlike">
+                        <img src="img/unlike.png" alt="Não Gostei">
+                        <p> Não Gostei</p>
+                    </div>
+                    <div class="share">
+                        <img src="img/share.png" alt="Compartilhar">
+                        <p> Compartilhar</p>
+                    </div>
+                    <div class="download">
+                        <img src="img/download.png" alt="Download">
+                        <p>Download</p>
+                    </div>
                 </div>
             </div>
             <div class="description">
@@ -58,49 +73,31 @@
         </section>
         <section class="related-videos">
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video1.png" alt="Miniatura do vídeo relacionado">
             </div>
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video2.png" alt="Miniatura do vídeo relacionado">
             </div>
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video3.png" alt="Miniatura do vídeo relacionado">
             </div>
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video4.png" alt="Miniatura do vídeo relacionado">
             </div>
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video1.png" alt="Miniatura do vídeo relacionado">
             </div>
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video2.png" alt="Miniatura do vídeo relacionado">
             </div>
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video3.png" alt="Miniatura do vídeo relacionado">
             </div>
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video4.png" alt="Miniatura do vídeo relacionado">
             </div>
             <div class="miniatura-video">
-                <img src="" alt="Miniatura do vídeo relacionado">
-                <h3>Título do Vídeo Relacionado</h3>
-                <p>Visualizações: 1.2M</p>
+                <img src="img/Video1.png" alt="Miniatura do vídeo relacionado">
             </div>
         </section>
     </main>
